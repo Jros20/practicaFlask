@@ -2,7 +2,7 @@ from flask import Flask
 #Crear app medante instancia
 app = Flask(__name__)
 #Crear rutas con sus correspondientes funciones
-@app.route('/')
+@app.route('/',methods=['GET'])
 def holamundo():
     return 'Hola Mundo!'
 @app.route('/mis-proyectos')
